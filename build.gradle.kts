@@ -7,6 +7,15 @@ repositories {
 }
 
 dependencies {
+    implementation("org.springframework:spring-core:6.2.5")
+    implementation("org.springframework:spring-beans:6.2.5")
+    implementation("org.springframework:spring-context:6.2.5")
+
+    implementation("org.projectlombok:lombok:1.18.36")
+    annotationProcessor("org.projectlombok:lombok:1.18.36")
+
+    implementation("jakarta.inject:jakarta.inject-api:2.0.1")
+
     testImplementation(libs.junit.jupiter)
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
